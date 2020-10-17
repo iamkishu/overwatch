@@ -1,0 +1,70 @@
+<!-- <body style="background-color: rgb(233, 233, 233);">
+</body> -->
+<div class="titlePic">
+  <h1 style="height: 6rem;margin-bottom: -3rem;font-size: 5rem;margin-left: 2rem;
+  font-family: Noto Sans JP;">OVERWATCH</h1>
+</div>
+<div class="coronaPic">
+    <img src="../../assets/images/abc.jpg"/>
+</div>
+
+    <div *ngIf='!signUpFlag && loginFlag' class="container" id="container">
+      <div *ngIf='!signUpFlag && loginFlag' class="form-container sign-in-container">
+        <form action="#">
+          <h1 style="font-size: xx-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sign in</h1>
+          <br>
+          <span> Use your account</span>
+          <input class="e" [(ngModel)]="userName1" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email" />
+          <input class="e" [(ngModel)]="passWord1"  [ngModelOptions]="{standalone: true}" type="password" placeholder="Password" />
+          <!-- <a href="#">Forgot your password?</a> -->
+          <button style="margin-top: 55px;" (click)="onSignIn1()">Sign In</button>
+          <br>
+          <!-- <h3><span>or</span></h3><br>
+          <span>Don't have an account? <button (click)="onSignUp()">Sign Up</button></span> 
+           -->
+        </form>
+      </div>
+    </div>
+    
+   
+    <!-- <div class="signUpHome" *ngIf='signUpFlag' >
+        <mat-card>
+            <mat-card-content>
+                <form class="my-form">
+                  <h1  style="font-size: xx-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Create Account</h1>
+          <span> Use your email for registration</span>
+                   <mat-form-field class="full-width">
+                          <mat-label>First Name</mat-label>
+                          <input [(ngModel)]="firstName"  matInput  placeholder="First name"  name="fname"  required>
+                       </mat-form-field>
+                       <mat-form-field class="full-width">
+                          <mat-label>Phone Number</mat-label>
+                          <input [(ngModel)]="phNo" matInput  placeholder="Last Name" name="lname"  required>
+                       </mat-form-field>
+                       <mat-form-field class="full-width">
+                          <mat-label>Email</mat-label>
+                          <input   [(ngModel)]="email" matInput  placeholder="Email" name="email" required>
+                       </mat-form-field>
+                       <mat-form-field class="full-width">
+                          <mat-label>Password</mat-label>
+                          <input  [(ngModel)]="pwd" matInput  type="password" placeholder="Password"  name="password" required>
+                       </mat-form-field>
+                       <mat-form-field style="width: 100%;" appearance="fill">
+                        <mat-label>Choose the Category</mat-label>
+                        <mat-select  [(ngModel)]="selectedValue" name="category">
+                          <mat-option *ngFor="let category of categories" [value]="category.value">
+                            {{category.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </form>
+                <mat-card-actions>
+                    <button  (click)="onRegister()" >REGISTER</button>
+                  </mat-card-actions>
+  
+                  <h3><span>or</span></h3><br>
+                  <span>Already have an account? <button (click)="onLogin()">Login</button></span>
+              </mat-card-content>
+          </mat-card>
+        </div> -->
+

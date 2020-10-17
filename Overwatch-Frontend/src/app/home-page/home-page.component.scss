@@ -1,0 +1,149 @@
+#leftHalf {
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  background-image: url('https://image.freepik.com/free-vector/white-technology-background_23-2148390335.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+
+}
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px; }
+.box1 {   background-color: white;   box-shadow: 0px 1px 6px #27272780;
+  border-radius: 5px;
+} 
+.box2 {  background-color: white;    box-shadow: 0px 1px 6px #27272780;
+  border-radius: 5px; border-top: 5px solid #B90276 !important; }
+.box3 {   background-color: white;   box-shadow: 0px 1px 6px #27272780;
+  border-radius: 5px; border-top: 5px solid #006249 !important;}
+.box4 { background-color: white;  box-shadow: 0px 1px 6px #27272780;
+  border-radius: 5px;border-top: 5px solid #005691 !important; }
+
+
+  
+  #section2 {
+    width: 200%;
+    height: 200rem;
+    //background-image: url(../assets/images/background2.png);
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  .values {
+    font-size: 35px;
+   // margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .chart-container {
+    position: absolute;
+  height: 150vh;
+  width: 95rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  }
+
+  .chart-container1 {
+    position: absolute;
+  height: 150vh;
+  width: 40vw;
+  margin-top: 3rem;
+  margin-left: 55rem;
+  }
+
+  .chart-container2 {
+    position: absolute;
+  height: 150vh;
+  width: 40vw;
+  margin-top: 40rem;
+  margin-left: 2rem;
+}
+  
+
+.chart-container3 {
+position: absolute;
+height: 150vh;
+width: 40vw;
+margin-top: 40rem;
+margin-left: 50rem;
+}
+
+
+.three-inline-buttons .button {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.three-inline-buttons {
+   display: table;
+   margin: 0 auto;
+   margin-left: 15rem;
+   float: left;
+}
+
+@media only screen and (max-width: 960px) {
+
+  .three-inline-buttons .button{
+      width: 100%;
+      margin: 20px;
+      text-align: center;
+  }
+  
+}
